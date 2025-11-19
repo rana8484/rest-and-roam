@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bungalow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4D9B1"
+    android:backgroundTint="#F4D9B1"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/bungalowImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/bungalowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:text="Bungalow Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bungalowDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bungalowName"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:paddingTop="5dp"
+        android:text="Capacity: X"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bungalowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bungalowDescription"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:text="Location: Beachside"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bungalowPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bungalowLocation"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:text="Price: $100"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bungalowAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bungalowPrice"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:text="Available Now"
+        android:textColor="#C70303"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bookBungalowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bungalowAvailability"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/bungalowImage"
+        android:backgroundTint="#BD9870"
+        android:text="Book"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9B48E">
+
+    <LinearLayout
+        android:id="@+id/LogInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9B48E"
+        android:backgroundTint="#D9B48E"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Username EditText -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:src="@drawable/restandroamlogin" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="24sp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="24sp" />
+
+    <!-- Email EditText (Visible only in Sign Up mode) -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <!-- Budget EditText (Visible only in Sign Up mode) -->
+    <EditText
+        android:id="@+id/budgetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Budget"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <!-- Action Button (Login / Sign Up) -->
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#070707"
+            android:text="Login"
+            android:textColor="#D7B38D"
+            android:textColorLink="#664FA3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    <!-- Toggle Button (Switch between Login and Sign Up) -->
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#070707"
+            android:text="Go to Sign Up"
+            android:textColor="#D7B38D"
+            android:textColorLink="#664FA3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>
